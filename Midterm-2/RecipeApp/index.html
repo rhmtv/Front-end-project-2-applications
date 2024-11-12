@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header with Search Bar -->
+    <header>
+        <h1>Recipe Finder</h1>
+        <input type="text" id="search-input" placeholder="Search for recipes..." oninput="fetchAutoSuggestions()">
+        <div id="suggestions-container" class="suggestions-container"></div> <!-- Контейнер для подсказок -->
+        <button onclick="searchRecipes()">Search</button>
+        <button onclick="toggleFavorites()">View Favorites</button>
+    </header>
+
+    <!-- Recipe Grid Section -->
+    <section id="recipes-section">
+        <h2>Recipes</h2> <!-- Заголовок "Recipes" по центру -->
+        <div id="recipes-grid" class="recipe-grid"></div>
+    </section>
+
+    <section id="favorites-section" style="display: none;">
+        <h2>Your Favorites</h2>
+        <div id="favorites-list" class="recipe-grid"></div>
+        <button onclick="returnToMenu()" class="card-button">Back to Recipes</button> <!-- New button to go back -->
+    </section>
+    
+
+    <!-- Модальное окно для деталей рецепта -->
+    <div id="recipe-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="recipe-details"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

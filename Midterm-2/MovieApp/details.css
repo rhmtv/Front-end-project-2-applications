@@ -1,0 +1,144 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .details-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header with Back Button */
+  .details-header a {
+    font-size: 18px;
+    color: #007bff;
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+  
+  .details-header a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Movie Details Section */
+  .movie-details {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  
+  .movie-poster {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .movie-poster img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .movie-info {
+    flex: 2;
+  }
+  
+  .movie-info h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .rating {
+    font-size: 18px;
+    color: #777;
+  }
+  
+  .movie-info p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .genres {
+    margin-top: 20px;
+  }
+  
+  .genres h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .genres div {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .genres .genre {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  #save-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  #save-btn:hover {
+    background-color: #218838;
+  }
+  
+  /* Cast Section */
+  .movie-cast {
+    margin-top: 40px;
+  }
+  
+  .movie-cast h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  #cast-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .cast-card {
+    width: 150px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .cast-card img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  /* Videos Section */
+  .movie-videos {
+    margin-top: 40px;
+  }
+  
+  .movie-videos h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  #video-container iframe {
+    width: 100%;
+    height: 400px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  

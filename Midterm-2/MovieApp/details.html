@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="details.css" />
+    <title>Movie Details</title>
+  </head>
+  <body>
+    <div class="details-container">
+      <!-- Header with Back Button -->
+      <div class="details-header">
+        <a href="index.html"> &larr; Back to Movies</a>
+      </div>
+
+      <!-- Movie Details Section -->
+      <div class="movie-details">
+        <div class="movie-poster">
+          <img src="" id="poster" alt="Movie Poster" />
+        </div>
+        <div class="movie-info">
+          <h1 id="movie-title"></h1>
+          <div class="rating">
+            <span id="movie-rating"></span>
+            <span id="movie-release-date"></span>
+          </div>
+          <p id="movie-overview"></p>
+          <div class="genres">
+            <h3>Genres</h3>
+            <div id="movie-genres"></div>
+          </div>
+          <button id="save-btn">Add to Watchlist</button>
+        </div>
+      </div>
+
+      <!-- Cast Section -->
+      <div class="movie-cast">
+        <h2>Cast</h2>
+        <div id="cast-list"></div>
+      </div>
+
+      <!-- Videos Section -->
+      <div class="movie-videos">
+        <h2>Videos</h2>
+        <div id="video-container"></div>
+      </div>
+    </div>
+
+    <script src="details.js"></script>
+  </body>
+</html>
